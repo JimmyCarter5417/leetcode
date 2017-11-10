@@ -32,11 +32,8 @@ public:
             for (int j = 0; j < grid.front().size(); ++j)
             {
                 if (grid[i][j] == 1 && !visit[i][j])
-                {
-                    int count = 0;
-                    dfs(grid, visit, i, j, count);
-                    
-                    res = max(res, count);
+                {                    
+                    res = max(res, dfs(grid, visit, i, j));
                 }
             }
         }
@@ -44,17 +41,16 @@ public:
         return res;
     }
     
-    void dfs(const vector<vector<int>>& grid, vector<vector<bool>>& visit, int x, int y, int& count)
+    int dfs(const vector<vector<int>>& grid, vector<vector<bool>>& visit, int x, int y)
     {
         if (x < 0 || x >= grid.size() || y < 0 || y >= grid.front().size() || grid[x][y] == 0 || visit[x][y])
-            return;
-        
-        count++;
+            return 0;        
+       
         visit[x][y] = true;
         
-        dfs(grid, visit, x - 1, y, count);
-        dfs(grid, visit, x + 1, y, count);
-        dfs(grid, visit, x, y - 1, count);
-        dfs(grid, visit, x, y + 1, count);
+        return 1 + dfs(grid, visit, x - 1, y)
+                 + dfs(grid, visit, x + 1, y) 
+                 + dfs(grid, visit, x, y - 1) 
+                 + dfs(grid, visit, x, y + 1);
     }
 };
