@@ -1,2 +1,2 @@
 # leetcode
-my leetcode solutions
+my [leetcode](https://leetcode.com/problemset/all/) solutions
