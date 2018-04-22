@@ -31,6 +31,7 @@ public:
         
         for (int i = 0; i < words.size(); i++)
         {
+            // 按照单词倒序构造字典树
             TrieNode* cur = root;
             for (int j = words[i].size() - 1; j >= 0; --j)
             {
@@ -39,12 +40,13 @@ public:
                 cur = cur->next[words[i][j]];
             }
             
+            // 用哈希表保存可能的叶子节点，+1即加上#
             leaves[cur] = words[i].size() + 1;
         }
         
         for (auto itr = leaves.begin(); itr != leaves.end(); ++itr)
         {
-            if (itr->first->next.empty())
+            if (itr->first->next.empty()) // 只计算next为空的叶子节点
                 res += itr->second;
         }
         
