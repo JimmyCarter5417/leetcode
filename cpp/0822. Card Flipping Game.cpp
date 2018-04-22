@@ -24,6 +24,9 @@
 // 1 <= fronts[i] <= 2000.
 // 1 <= backs[i] <= 2000.
 
+/*
+ 前后数字相同肯定排除，剩余数字里查找最小即可
+*/
 class Solution {
 public:
     int flipgame(vector<int>& fronts, vector<int>& backs) {
