@@ -31,7 +31,7 @@
 class Solution {
 public:
     int minEatingSpeed(vector<int>& piles, int H) {
-		// 二分法，分段查找
+        // 二分法，分段查找
         int left = 1;
         int right = 10e9;
         int mid;

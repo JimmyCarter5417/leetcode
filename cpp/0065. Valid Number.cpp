@@ -15,8 +15,8 @@
 class Solution {
 public:
     bool isNumber(string s) {
-		// [0-9]+ (.[0-9]+)? (E(+|-)? [0-9]+)?
-		// 用状态机做比较简单
+        // [0-9]+ (.[0-9]+)? (E(+|-)? [0-9]+)?
+        // 用状态机做比较简单
         enum INPUT 
         {
             SPACE = 0,
@@ -61,4 +61,4 @@ public:
         
         return status == 2 || status == 3  || status == 4 || status == 7 || status == 8;
     }
-};	
+};
