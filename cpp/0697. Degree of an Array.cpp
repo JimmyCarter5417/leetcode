@@ -33,7 +33,7 @@ public:
             
             m[n]++;//count of each element
             
-            if (left.find(n) == left.end() || left[n] > i)
+            if (left.find(n) == left.end())
                 left[n] = i;//first
             
             if (right.find(n) == right.end() || right[n] < i)
