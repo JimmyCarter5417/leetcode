@@ -33,9 +33,9 @@ public:
         double sum[101][101] = {0}; // 注意边界，101 == 100 + 1
         sum[0][0] = poured;
         
-        for (int i = 0; i <= query_row; i++) // 注意边界，<=
+        for (int i = 0; i < query_row; i++) // 注意边界<，因为下面处理均为[i + 1]
         {
-            for (int j = 0; j <= query_glass; j++) // 注意边界，<=
+            for (int j = 0; j <= query_glass; j++) // 注意边界<=，因为下面处理包含[j]和[j + 1]
             {
                 double next = (sum[i][j] - 1) / 2;
                 if (next > 0)
