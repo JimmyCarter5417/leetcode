@@ -28,20 +28,20 @@
 class Solution {
 public:
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
-        set<vector<int>> s;
+        vector<vector<int>> res;
         vector<int> out;
-        dfs(candidates, 0, target, out, s);
-        return vector<vector<int>>(s.begin(), s.end());
-        
+        sort(candidates.begin(), candidates.end()); // 注意先排序即可
+        dfs(candidates, 0, target, out, res);
+        return res;        
     }
     
-    void dfs(const vector<int>& candidates, int level, int target, vector<int>& out, set<vector<int>>& s)
+    void dfs(const vector<int>& candidates, int level, int target, vector<int>& out, vector<vector<int>>& res)
     {
         if (level == candidates.size() || target <= 0)
         {
             if (target == 0)
             {
-                s.insert(out);
+                res.push_back(out);
             }
             
             return;
@@ -50,7 +50,7 @@ public:
         for (int i = level; i < candidates.size(); i++)
         {
             out.push_back(candidates[i]);
-            dfs(candidates, i, target - candidates[i], out, s);
+            dfs(candidates, i, target - candidates[i], out, res);
             out.pop_back();
         }
     }
