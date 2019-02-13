@@ -25,19 +25,14 @@ public:
             return true;
         }
         // 随时更新最远距离即可
-        int end = nums[0];
-        for (int i = 1; i < nums.size(); i++)
+        int last = 0;
+        for (int i = 0; i < nums.size(); ++i)
         {
-            if (end >= i)
-            {
-                end = max(end, nums[i] + i);
-            }
-            else
-            {
+            if (i > last)
                 return false;
-            }
+            last = max(last, nums[i] + i);
         }
         
-        return end >= nums.size() - 1;
+        return last >= nums.size() - 1;
     }
 };
