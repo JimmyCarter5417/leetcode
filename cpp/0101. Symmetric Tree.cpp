@@ -26,7 +26,7 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
- // 左右递归
+ // solution I：左右递归
 class Solution {
 public:
     bool isSymmetric(TreeNode* root) {
@@ -51,5 +51,50 @@ public:
         }
         
         return isSymmetric(p1->left, p2->right) && isSymmetric(p1->right, p2->left);
+    }
+};
+
+// solution II：层序迭代
+class Solution {
+public:
+    bool isSymmetric(TreeNode* root) {
+        deque<TreeNode*> q1, q2;
+        if (!root)
+        {
+            return false;
+        }
+        
+        q1.push_back(root->left);
+        q2.push_back(root->right);
+
+        while (!q1.empty() && !q2.empty())
+        {
+            TreeNode* p1 = q1.front();
+            TreeNode* p2 = q2.front();
+            
+            // 注意层序遍历的终止条件即可
+            if (!p1 && !p2)
+            {
+                continue;
+            }
+            if (p1 || p2)
+            {
+                return false;
+            }
+            if (p1->val != p2->val)
+            {
+                return false;
+            }
+            
+            q1.pop_front();
+            q2.pop_front();
+            
+            q1.push_back(p1->left);
+            q1.push_back(p1->right);
+            q2.push_back(p2->right);
+            q2.push_back(p2->left);         
+        }
+        
+        return true;
     }
 };
