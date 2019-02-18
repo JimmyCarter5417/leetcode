@@ -24,6 +24,15 @@ public:
         {
             dict[ch]++;
         }
+        
+        // 此处有个优化方案：如果s中有许多t中不包含的字符，会导致窗口过大
+        // 可将s进行“瘦身”，只包含t中存在的字符
+        // 后续处理不变
+        /*string s1;
+        for (char ch: s)
+        {
+            s1.push_back(ch);
+        }*/
 
         int left = 0;
         int right = 0;
