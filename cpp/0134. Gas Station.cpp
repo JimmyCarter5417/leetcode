@@ -43,6 +43,7 @@
 //
 
 
+// 剩余油量是个锯齿图，取最低点
 class Solution {
 public:
     int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
