@@ -36,7 +36,7 @@ public:
             {
                 left = mid + 1;
             }
-            else
+            else // 如果题目没有指定num[i] ≠ num[i+1]，这里就有问题了
             {
                 right = mid;
             }
