@@ -17,6 +17,7 @@
 //
 
 
+// easy，排序或者hash都可以
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
