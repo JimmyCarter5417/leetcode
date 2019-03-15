@@ -67,7 +67,17 @@ public:
         {
             if (j == -1 || needle[i] == needle[j])
             {
-                next[++i] = ++j;
+                i++;
+                j++;
+                // 注意：此处如果不判断是否相同，仅next[i] = j，可能导致i处的next值比实际值大，匹配时会多几次处理
+                if (needle[i] == needle[j])
+                {
+                    next[i] = next[j];
+                }
+                else
+                {
+                    next[i] = j;
+                }
             }
             else
             {
