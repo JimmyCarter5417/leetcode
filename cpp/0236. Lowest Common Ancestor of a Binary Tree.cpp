@@ -30,7 +30,6 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
- // solution I: 无忧化
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
@@ -48,26 +47,5 @@ public:
         }
         
         return left ? left : right;
-    }
-};
-
-// solution II: 优化减枝
-class Solution {
-public:
-    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        if (!root || root == p || root == q)
-            return root;
-            
-        TreeNode* left = lowestCommonAncestor(root->left, p, q);
-        TreeNode* right = lowestCommonAncestor(root->right, p, q);
-        
-        if (left && right)
-            return root;
-        else if (left && !right)    
-            return left;
-        else if (!left && right)
-            return right;
-        else
-            return nullptr;
     }
 };
