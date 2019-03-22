@@ -81,7 +81,7 @@ my [leetcode](https://leetcode.com/problemset/all/) solutions
 * [0114. Flatten Binary Tree to Linked List](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0114.%20Flatten%20Binary%20Tree%20to%20Linked%20List.cpp)  
 * [0115. Distinct Subsequences](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0115.%20Distinct%20Subsequences.cpp)  
 * [0116. Populating Next Right Pointers in Each Node](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0116.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node.cpp)  
-* [0117. Populating Next Right Pointers in Each Node II](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0117. Populating Next Right Pointers in Each Node II.cpp)  
+* [0117. Populating Next Right Pointers in Each Node II](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0117.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node%20II.cpp)  
 * [0120. Triangle](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0120.%20Triangle.cpp)  
 * [0121. Best Time to Buy and Sell Stock](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.cpp)  
 * [0122. Best Time to Buy and Sell Stock II](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0122.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II.cpp)  
