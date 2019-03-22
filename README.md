@@ -16,7 +16,7 @@ my [leetcode](https://leetcode.com/problemset/all/) solutions
 * [0017. Letter Combinations of a Phone Number](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0017.%20Letter%20Combinations%20of%20a%20Phone%20Number.cpp)  
 * [0020. Valid Parentheses](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0020.%20Valid%20Parentheses.cpp)  
 * [0021. Merge Two Sorted Lists](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0021.%20Merge%20Two%20Sorted%20Lists.cpp)  
-* [0022. (Generate Parentheses)](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0022.%20(Generate%20Parentheses).cpp)  
+* [0022. Generate Parentheses](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0022.%20Generate%20Parentheses.cpp)  
 * [0023. Merge k Sorted Lists](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0023.%20Merge%20k%20Sorted%20Lists.cpp)  
 * [0024. Swap Nodes in Pairs](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0024.%20Swap%20Nodes%20in%20Pairs.cpp)  
 * [0028. Implement strStr()](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0028.%20Implement%20strStr().cpp)  
