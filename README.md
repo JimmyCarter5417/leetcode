@@ -221,6 +221,7 @@ my [leetcode](https://leetcode.com/problemset/all/) solutions
 * [0297. Serialize and Deserialize Binary Tree](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0297.%20Serialize%20and%20Deserialize%20Binary%20Tree.cpp)  
 * [0299. Bulls and Cows](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0299.%20Bulls%20and%20Cows.cpp)  
 * [0300. Longest Increasing Subsequence](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0300.%20Longest%20Increasing%20Subsequence.cpp)  
+* [0301. Remove Invalid Parentheses](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0301.%20Remove%20Invalid%20Parentheses.cpp)  
 * [0377. Combination Sum IV](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0377.%20Combination%20Sum%20IV.cpp)  
 * [0495. Teemo Attacking](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0495.%20Teemo%20Attacking.cpp)  
 * [0654. Maximum Binary Tree](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0654.%20Maximum%20Binary%20Tree.cpp)  
