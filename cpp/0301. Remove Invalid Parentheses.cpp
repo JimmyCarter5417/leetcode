@@ -1,0 +1,154 @@
+// Remove the minimum number of invalid parentheses in order to make the input string valid. Return all possible results.
+
+// Note: The input string may contain letters other than the parentheses ( and ).
+
+// Example 1:
+
+// Input: "()())()"
+// Output: ["()()()", "(())()"]
+// Example 2:
+
+// Input: "(a)())()"
+// Output: ["(a)()()", "(a())()"]
+// Example 3:
+
+// Input: ")("
+// Output: [""]
+
+
+// hard
+// solution I: DFS
+class Solution {
+public:
+    vector<string> removeInvalidParentheses(string s) {
+        unordered_set<string> result;
+        int left_removed = 0;
+        int right_removed = 0;
+
+        for(auto c : s) 
+        {
+            if(c == '(') 
+            {
+                ++left_removed;
+            }
+            else if(c == ')') 
+            {
+                if(left_removed != 0) 
+                {
+                    --left_removed;
+                }
+                else 
+                {
+                    ++right_removed;
+                }
+            }
+        }
+
+        helper(s, 0, left_removed, right_removed, 0, "", result);
+
+        return vector<string>(result.begin(), result.end());
+    }
+
+    void helper(string s, int index, int left_removed, int right_removed, int pair, string path, unordered_set<string>& result) 
+    {
+        if(index == s.size()) 
+        {
+            if(left_removed == 0 && right_removed == 0 && pair == 0) 
+            {
+                result.insert(path);
+            }
+            return;
+        }
+
+        if(s[index] != '(' && s[index] != ')') 
+        {
+            helper(s, index + 1, left_removed, right_removed, pair, path + s[index], result);
+        }
+        else 
+        {
+            if(s[index] == '(') 
+            {
+                if(left_removed > 0) 
+                {
+                    helper(s, index + 1, left_removed - 1, right_removed, pair, path, result);
+                }
+
+                helper(s, index + 1, left_removed, right_removed, pair + 1, path + s[index], result);
+            }
+            if(s[index] == ')') 
+            {
+                if(right_removed > 0) 
+                {
+                    helper(s, index + 1, left_removed, right_removed - 1, pair, path, result);
+                }
+
+                if(pair > 0) 
+                {
+                    helper(s, index + 1, left_removed, right_removed, pair - 1, path + s[index], result);
+                }
+            }
+        }
+    }
+};
+
+// solution II: BFS
+class Solution {
+public:
+    vector<string> removeInvalidParentheses(string s) {
+        unordered_set<string> visited;
+        vector<string> res;
+        queue<string> q;
+        q.push(s);
+        visited.insert(s);
+       
+        bool found = false;
+        while (!q.empty())
+        {
+            string t = q.front();
+            q.pop();
+            
+            if (isValid(t))
+            {
+                found = true;
+                res.push_back(t);
+            }
+            
+            if (found)
+                continue;
+          
+            for (int i = 0; i < t.size(); ++i)
+            {
+                if (t[i] != '(' && t[i] != ')')
+                    continue;
+                    
+                string tmp = t.substr(0, i) + t.substr(i + 1);
+                if (visited.find(tmp) == visited.end())
+                {
+                    q.push(tmp);
+                    visited.insert(tmp);
+                }
+            }
+        }
+        
+        return res;
+    }
+    
+    bool isValid(const string& s)
+    {
+        int cnt = 0;
+        for (char ch: s)
+        {
+            if (ch != '(' && ch != ')')
+                continue;
+            else if (ch == '(')
+                cnt++;
+            else
+            {
+                if (--cnt < 0)
+                    return false;
+            }
+        }
+        
+        return cnt == 0;
+    }
+};
