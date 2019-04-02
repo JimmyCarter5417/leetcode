@@ -18,7 +18,7 @@ public:
         
         for (int n: nums)
         {
-            tmp = max(n + tmp, n);
+            tmp = max(n + tmp, n); // 关键在于这个tmp的更新时机
             res = max(res, tmp);
         }
         
