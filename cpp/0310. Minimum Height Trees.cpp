@@ -35,6 +35,7 @@
 // The height of a rooted tree is the number of edges on the longest downward path between the root and a leaf.
 
 
+// 剥洋葱，与0366. Find Leaves of Binary Tree类似
 class Solution {
 public:
     vector<int> findMinHeightTrees(int n, vector<pair<int, int>>& edges) {
