@@ -1,4 +1,4 @@
-### Sliding Window algorithm template to solve all the Leetcode substring search problem
+### Sliding window algorithm template to solve all the Leetcode substring search problems
 
 Among all leetcode questions, I find that there are at least 5 substring search problem which could be solved by the sliding window algorithm.
 so I sum up the algorithm template here. wish it will help you!
