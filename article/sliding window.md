@@ -60,15 +60,15 @@ public class Solution {
 1) Firstly, here is my sliding solution this question. I will sum up the template below this code.
 2) the similar questions are:
 
-https://leetcode.com/problems/minimum-window-substring/
-https://leetcode.com/problems/longest-substring-without-repeating-characters/
-https://leetcode.com/problems/substring-with-concatenation-of-all-words/
-https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
-https://leetcode.com/problems/find-all-anagrams-in-a-string/
+https://leetcode.com/problems/minimum-window-substring/  
+https://leetcode.com/problems/longest-substring-without-repeating-characters/  
+https://leetcode.com/problems/substring-with-concatenation-of-all-words/  
+https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/  
+https://leetcode.com/problems/find-all-anagrams-in-a-string/  
 
 3) I will give my solution for these questions use the above template one by one
 
-[Minimum-window-substring](https://leetcode.com/problems/minimum-window-substring/)
+#### [Minimum-window-substring](https://leetcode.com/problems/minimum-window-substring/)
 
 ```
 public class Solution {
@@ -130,7 +130,7 @@ to
                 }
 ```
 
-[longest substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+#### [longest substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 ```
 public class Solution {
     public int lengthOfLongestSubstring(String s) {
@@ -158,7 +158,7 @@ public class Solution {
     }
 }
 ```
-[Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)
+#### [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)
 ```
 public class Solution {
     public int lengthOfLongestSubstringTwoDistinct(String s) {
@@ -183,7 +183,7 @@ public class Solution {
     }
 }
 ````
-[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
+#### [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
 ```
 public class Solution {
     public List<Integer> findSubstring(String S, String[] L) {
@@ -236,7 +236,7 @@ public class Solution {
     }
 }
 ```
-[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
+#### [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
 ```
 public class Solution {
     public List<Integer> findAnagrams(String s, String t) {
