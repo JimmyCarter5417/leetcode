@@ -1,7 +1,10 @@
+[Sliding Window algorithm template to solve all the Leetcode substring search problem.](https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/Sliding-Window-algorithm-template-to-solve-all-the-Leetcode-substring-search-problem)
+
 Among all leetcode questions, I find that there are at least 5 substring search problem which could be solved by the sliding window algorithm.
 so I sum up the algorithm template here. wish it will help you!
 
 the template:
+```
 public class Solution {
     public List<Integer> slidingWindowTemplateByHarryChaoyangHe(String s, String t) {
         //init a collection or int value to save the result according the question.
@@ -52,7 +55,9 @@ public class Solution {
         return result;
     }
 }
-Firstly, here is my sliding solution this question. I will sum up the template below this code.
+```
+
+1) Firstly, here is my sliding solution this question. I will sum up the template below this code.
 2) the similar questions are:
 
 https://leetcode.com/problems/minimum-window-substring/
@@ -63,9 +68,9 @@ https://leetcode.com/problems/find-all-anagrams-in-a-string/
 
 3) I will give my solution for these questions use the above template one by one
 
-Minimum-window-substring
-https://leetcode.com/problems/minimum-window-substring/
+[Minimum-window-substring](https://leetcode.com/problems/minimum-window-substring/)
 
+```
 public class Solution {
     public String minWindow(String s, String t) {
         if(t.length()> s.length()) return "";
@@ -107,21 +112,25 @@ public class Solution {
         return s.substring(head, head+len);
     }
 }
+```
+
 you may find that I only change a little code above to solve the question "Find All Anagrams in a String":
 change
-
+```
                 if(end-begin < len){
                     len = end - begin;
                     head = begin;
                 }
+```
 to
-
+```
                 if(end-begin == t.length()){
                     result.add(begin);
                 }
-longest substring without repeating characters
-https://leetcode.com/problems/longest-substring-without-repeating-characters/
+```
 
+[longest substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+```
 public class Solution {
     public int lengthOfLongestSubstring(String s) {
         Map<Character, Integer> map = new HashMap<>();
@@ -147,9 +156,9 @@ public class Solution {
         return d;
     }
 }
-Longest Substring with At Most Two Distinct Characters
-https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
-
+```
+[Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)
+```
 public class Solution {
     public int lengthOfLongestSubstringTwoDistinct(String s) {
         Map<Character,Integer> map = new HashMap<>();
@@ -172,9 +181,9 @@ public class Solution {
         return len;
     }
 }
-Substring with Concatenation of All Words
-https://leetcode.com/problems/substring-with-concatenation-of-all-words/
-
+````
+[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
+```
 public class Solution {
     public List<Integer> findSubstring(String S, String[] L) {
         List<Integer> res = new LinkedList<>();
@@ -225,9 +234,9 @@ public class Solution {
         return res;
     }
 }
-Find All Anagrams in a String
-https://leetcode.com/problems/find-all-anagrams-in-a-string/
-
+```
+[Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
+```
 public class Solution {
     public List<Integer> findAnagrams(String s, String t) {
         List<Integer> result = new LinkedList<>();
@@ -269,3 +278,4 @@ public class Solution {
         return result;
     }
 }
+```
