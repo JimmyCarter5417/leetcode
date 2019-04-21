@@ -31,3 +31,39 @@
 //           -> "F"                                    -> "F"
  
 
+class Solution {
+public:
+    string parseTernary(string expression) {
+        stack<char> s;
+
+        for (int i = expression.size() - 1; i >= 0; --i) // 从后往前
+        {
+            // O ? A : B
+            char c = expression[i];
+
+            if (!s.empty()) 
+            {
+                if (s.top() == '?') 
+                {
+                    s.pop(); // ?
+
+                    char first = s.top(); 
+                    s.pop(); // A
+
+                    s.pop(); // :
+
+                    char second = s.top(); 
+                    s.pop(); // B
+                    
+                    s.push(c == 'T' ? first : second);
+                }
+            } 
+            else 
+            {
+                s.push(c);
+            }
+        }
+
+        return string(1, s.top());
+    }
+};
