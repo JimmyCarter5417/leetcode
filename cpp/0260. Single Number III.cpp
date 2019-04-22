@@ -10,6 +10,11 @@
 // Your algorithm should run in linear runtime complexity. Could you implement it using only constant space complexity?
 
 
+// https://www.geeksforgeeks.org/find-the-two-repeating-elements-in-a-given-array/
+// 全部出现一次，只有两个数字出现两次，如：123 4455，即上面geeksforgeeks题目
+// 全部出现两次，只有两个数字出现一次，如：112233 45，即本题
+// 都需要找到那两个数字最右边的1进行分组
+
 // Single Number的扩展
 class Solution {
 public:
