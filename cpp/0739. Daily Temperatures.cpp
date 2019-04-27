@@ -5,16 +5,16 @@
 // Note: The length of temperatures will be in the range [1, 30000]. Each temperature will be an integer in the range [30, 100].
 
 
-// 从后向前遍历，维护一个递增的栈，保存递增序列的索引
+// 相似的问题：496 503 556
 class Solution {
 public:
     vector<int> dailyTemperatures(vector<int>& T) {
         vector<int> res(T.size());
         stack<int> stk;
         
-        for (int i = T.size() - 1; i >= 0; i--)
+        for (int i = T.size() - 1; i >= 0; i--) // 从后往前遍历
         {
-            while (!stk.empty() && T[i] >= T[stk.top()])
+            while (!stk.empty() && T[i] >= T[stk.top()]) // 单调递减栈
             {
                 stk.pop();
             }
@@ -28,7 +28,7 @@ public:
                 res[i] = stk.top() - i;
             }
             
-            stk.push(i);
+            stk.push(i); // 保存索引
         }
         
         return res;
