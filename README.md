@@ -225,6 +225,7 @@ my [leetcode](https://leetcode.com/problemset/all/) solutions
 * [0303. Range Sum Query - Immutable](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0303.%20Range%20Sum%20Query%20-%20Immutable.cpp)  
 * [0304. Range Sum Query 2D - Immutable](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0304.%20Range%20Sum%20Query%202D%20-%20Immutable.cpp)  
 * [0306. Additive Number](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0306.%20Additive%20Number.cpp)  
+* [0307. Range Sum Query - Mutable.cpp](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0307.%20Range%20Sum%20Query%20-%20Mutable.cpp)  
 * [0310. Minimum Height Trees](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0310.%20Minimum%20Height%20Trees.cpp)  
 * [0311. Sparse Matrix Multiplication](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0311.%20Sparse%20Matrix%20Multiplication.cpp)  
 * [0312. Burst Balloons](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0312.%20Burst%20Balloons.cpp)  
