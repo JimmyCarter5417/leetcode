@@ -28,8 +28,8 @@ where the subproblem C now becomes ***"find the number of important reverse pair
 
 Note that for a pair (p, q) to be an important reverse pair, it has to satisfy the following two conditions:
 
-```p < q```: the first element must come before the second element;
-```nums[p] > 2 * nums[q]```: the first element has to be greater than twice of the second element.
+```p < q```: the first element must come before the second element;  
+```nums[p] > 2 * nums[q]```: the first element has to be greater than twice of the second element.  
 For subproblem C, the first condition is met automatically; so we only need to consider the second condition, which is equivalent to searching for all elements within subarray ```nums[0, j - 1]``` that are greater than twice of ```nums[j]```.
 
 The straightforward way of searching would be a linear scan of the subarray, which runs at the order of ***O(j)***. From the sequential recurrence relation, this leads to the naive ***O(n^2)*** solution.
