@@ -117,7 +117,7 @@ Min: O(n + nlogn)
 ```
 如果考虑n 无限大
 ```
-Max: O(constant * n) 为什么是constant * n，参考
+Max: O(constant * n)  
 Min: O(log(k) * n)
 ```
 
