@@ -1,7 +1,8 @@
 # sorting problems  
 a common solution for sorting problems, just like this [Sort Colors](https://leetcode.com/problems/sort-colors/)
 
-```void partition(vector<int> & nums, vector<int> const & pivots)
+```
+void partition(vector<int> & nums, vector<int> const & pivots)
 {
     vector<int> boundaries(pivots.size());
     for (auto &n : nums)
