@@ -1,4 +1,4 @@
-# Kth Largest Element in an Array
+# kth largest element
 
 这题是一个电面高频题，我们从最原始的方式慢慢的来讨论怎么解题
 

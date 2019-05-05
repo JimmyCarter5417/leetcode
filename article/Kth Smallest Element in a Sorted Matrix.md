@@ -1,4 +1,4 @@
-# Kth Smallest Element in a Sorted Matrix
+# kth smallest element in a sorted matrix
 
 ## Solution 1 : Heap  
 Here is the step of my solution:  
