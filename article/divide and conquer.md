@@ -1,4 +1,6 @@
-#  General principles behind problems similar to Reverse Pairs  
+#  divide and conquer  
+
+[0493. Reverse Pairs](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0493.%20Reverse%20Pairs.cpp)  
 
 It looks like a host of solutions are out there (BST-based, BIT-based, Merge-sort-based). Here I'd like to focus on the general principles behind these solutions and its possible application to a number of similar problems.
 
