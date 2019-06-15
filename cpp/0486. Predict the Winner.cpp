@@ -22,6 +22,8 @@
 // If the scores of both players are equal, then player 1 is still the winner.
 
 
+// 与4464. Can I Win类似
+
 // solution I: 递归
 class Solution {
 public:
