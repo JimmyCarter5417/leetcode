@@ -406,6 +406,7 @@ my [leetcode](https://leetcode.com/problemset/all/) solutions
 * [0875. Koko Eating Bananas](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0875.%20Koko%20Eating%20Bananas.cpp)  
 * [0877. Stone Game](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0877.%20Stone%20Game.cpp)  
 * [0885. Boats to Save People](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0885.%20Boats%20to%20Save%20People.cpp)  
+* [0895. Maximum Frequency Stack.cpp](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0895.%20Maximum%20Frequency%20Stack.cpp)  
 * [0916. Word Subsets](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0916.%20Word%20Subsets.cpp)  
 * [0917. Reverse Only Letters](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0917.%20Reverse%20Only%20Letters.cpp)  
 * [0921. Minimum Add to Make Parentheses Valid](https://github.com/wangqiang5417/leetcode/blob/master/cpp/0921.%20Minimum%20Add%20to%20Make%20Parentheses%20Valid.cpp)  
